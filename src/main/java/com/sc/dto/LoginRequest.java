@@ -1,8 +1,14 @@
 package com.sc.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+@Schema(description = "Login request details")
 public class LoginRequest {
 
+	@Schema(description = "Login Id")
 	private String loginId;
+	
+	@Schema(description = "password")
 	private String password;
 
 	public String getLoginId() {
